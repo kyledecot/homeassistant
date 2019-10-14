@@ -1,11 +1,11 @@
 ZUNO_SETUP_CHANNELS(
-    ZUNO_SENSOR_MULTILEVEL(
-        ZUNO_SENSOR_MULTILEVEL_TYPE_DISTANCE,
-        SENSOR_MULTILEVEL_SCALE_METER,
-        SENSOR_MULTILEVEL_SIZE_TWO_BYTES,
-        2, // two decimals after dot
-        getter
-    )
+  ZUNO_SENSOR_MULTILEVEL(
+    ZUNO_SENSOR_MULTILEVEL_TYPE_DISTANCE,
+    SENSOR_MULTILEVEL_SCALE_METER,
+    SENSOR_MULTILEVEL_SIZE_TWO_BYTES,
+    2, // two decimals after dot
+    getter
+  )
 );
 
 int readPin = 9;
