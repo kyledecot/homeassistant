@@ -1,2 +1,9 @@
+default_config:
+name: Home
+temperature_unit: F
+time_zone: America/Detroit
+homeassistant:
+  auth_providers: 
+    - type: homeassistant
 zwave:
   usb_path: /dev/ttyACM0

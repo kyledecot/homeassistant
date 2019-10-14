@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+PLUGINS=(vagrant-vbguest vagrant-docker-compose)
+
+for plugin in "${PLUGINS[@]}"; do
+  if [ ! -z $(vagrant plugin list | grep -qc $plugin)]; then
+    vagrant plugin install vagrant-vbguest
+  fi
+done 
