@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  homeassistant:
+    privileged: true
+    build: .
+    ports:
+      - "8123:8123"
+    expose:
+      - "8123"
